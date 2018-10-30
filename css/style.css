@@ -1,1 +1,561 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*header*/
+.container{
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.left-nav{
+
+}
+
+.left-nav p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+
+}
+span{
+    color: lime;
+}
+.right-nav{
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+a:hover{
+    transition: 1s;
+    color: lime;
+}
+.right-nav > ul > li{
+    text-transform: uppercase;
+    display: flex;
+    float: left;
+    margin-right: 40px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.right-nav > ul> li:nth-child(1n){
+    display: block;
+}
+.sub-nav{
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sub-nav > li{
+    text-transform: capitalize;
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+    display: none;
+    margin: 10px 10px 10px 10px;
+}
+/*rozwijane menu*/
+ul > li:hover > .sub-nav > li{
+    display: block;
+    z-index: 1000;
+}
+/**/
+
+/*header*/
+
+/*section*/
+
+.first{
+    display: flex;
+    background: linear-gradient(to bottom, white, lightgrey);
+    justify-content: space-between;
+}
+
+.text{
+    text-align: center;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.text > h1{
+    text-transform: uppercase;
+}
+.text > p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.text > button{
+    height: 50px;
+    width: 200px;
+    border-radius: 90px;
+    color: white;
+    background-color: black;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.slider{
+    display: flex;
+    overflow: hidden;
+}
+.slider > .next, .prev{
+    /*background-color: transparent;*/
+    /*border: none;*/
+    justify-content: space-between;
+}
+.second{
+    display: flex;
+    margin-top: 30px;
+}
+.second > .images{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.images-text-first > p{
+    position: relative;
+    bottom: 70px;
+    right: 90px;
+    font-size: 20px;
+}
+.images-text-second > p {
+    position: relative;
+    bottom: 70px;
+    right: 70px;
+    font-size: 20px;
+}
+.images-text-second > img{
+    margin-left: 10px;
+}
+#one{
+    text-transform: uppercase;
+    color: black;
+}
+#two{
+    text-transform: uppercase;
+    color: black;
+}
+.second-text {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 15px;
+    height: 225px;
+}
+.second-text > h1{
+    font-size: 25px;
+    margin-left: -480px;
+    margin-bottom: 10px;
+}
+.second-text > div{
+    border: 1px solid lime;
+    height: 7px;
+    background-color: lime;
+    margin-bottom: 10px;
+    width: 30%;
+}
+.border-first{
+    border: 1px solid lime;
+    background-color: lime;
+    height: 7px;
+    width: 45%;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+}
+.border-second {
+    border: 1px solid lime;
+    background-color: lime;
+    height: 7px;
+    width: 55%;
+    position: relative;
+    bottom: 70px;
+    left: 15px;
+}
+.transparent-box-first{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    opacity: 0.5;
+    height: 50px;
+    position: relative;
+    bottom: 110px;
+}
+.transparent-box-second {
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    opacity: 0.5;
+    height: 50px;
+    position: relative;
+    bottom: 110px;
+    margin-left: 3%;
+}
+.margarita{
+    color: black;
+    position: relative;
+    z-index: 100;
+}
+.claire{
+    color: black;
+    position: relative;
+    z-index: 100;
+}
+
+.bg{
+    border: 1px solid lightgrey;
+    color: lightgrey;
+    height: 700px;
+    background-color: lavenderblush;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.price-list-bottom{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.price-list-top > h1{
+    text-transform: uppercase;
+    color: black;
+    margin-left: -1100px;
+    margin-bottom: 10px;
+}
+.price-list-top > div{
+    border: 1px solid lime;
+    background-color: lime;
+    height: 7px;
+    width: 30%;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.first-box{
+    border: 1px solid lightblue;
+    background-color: white;
+    width: 200px;
+}
+.top-circle-first{
+    border: 1px solid lightblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    position: relative;
+    bottom: 27px;
+    left: 70px;
+}
+.top-circle-first-second {
+    border: 1px solid lightblue;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: relative;
+    left: 9px;
+    top: 9px;
+}
+.first-box > h2{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.first-box > .circle-first{
+    margin-bottom: 20px;
+    height: 150px;
+    border: 1px solid lightblue;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.first-box > .circle-first > p{
+    margin-top: 40px;
+    height: 0;
+    font-size: 25px;
+}
+.text-box-first > p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-box-first > p:nth-child(1){
+    color: black;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    opacity: 0.2;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.text-box-first > p:nth-child(2){
+    color: black;
+    border: 1px solid lightgrey;
+    background-color: lime;
+    opacity: 0.2;
+    margin-top: 0;
+    font-size: 18px;
+}
+.text-box-first > button{
+    background-color: lightblue;
+    border-radius: 90px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.text-box-first > button > a{
+    text-transform: uppercase;
+}
+
+.second-box{
+    border: 1px solid lightblue;
+    background-color: lavender;
+    width: 200px;
+    padding-bottom: 20px;
+}
+.top-circle-second{
+    border: 1px solid lavender;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: lavender;
+    position: relative;
+    bottom: 27px;
+    left: 70px;
+
+}
+.top-circle-second-second{
+    border: 1px solid lightblue;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 9px;
+    top: 9px;
+}
+
+.second-box > h2{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.second-box > .circle-second{
+    margin-bottom: 20px;
+    height: 150px;
+    border: 1px solid lightblue;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.second-box > .circle-second > p{
+    margin-top: 40px;
+    height: 0;
+    font-size: 25px;
+}
+.text-box-second > p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-box-second > p:nth-child(1){
+    color: lightgrey;
+    border: 1px solid white;
+    background-color: white;
+    opacity: 1;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.text-box-second > p:nth-child(2){
+    color: black;
+    border: 1px solid lightgrey;
+    background-color: lime;
+    opacity: 0.2;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.text-box-second > p:nth-child(3) {
+    color: lightgrey;
+    border: 1px solid white;
+    background-color: white;
+    opacity: 1;
+    margin-top: 0;
+    font-size: 18px;
+
+}
+.text-box-second > button{
+    background-color: lightblue;
+    border-radius: 90px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 22px;
+}
+.text-box-second > button > a{
+    text-transform: uppercase;
+}
+
+.third-box{
+    border: 1px solid lightblue;
+    background-color: white;
+    width: 200px;
+}
+.top-circle-third{
+    border: 1px solid lightblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    position: relative;
+    bottom: 27px;
+    left: 70px;
+}
+.top-circle-third-second {
+    border: 1px solid lightblue;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: relative;
+    left: 9px;
+    top: 9px;
+}
+.third-box > h2{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.third-box > .circle-third{
+    margin-bottom: 20px;
+    height: 150px;
+    border: 1px solid lightblue;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.third-box > .circle-third > p{
+    margin-top: 40px;
+    height: 0;
+    font-size: 25px;
+}
+.text-box-third > p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-box-third > p:nth-child(1){
+    color: black;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    opacity: 0.2;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.text-box-third > p:nth-child(2){
+    color: black;
+    border: 1px solid lightblue;
+    background-color: lime;
+    opacity: 0.2;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.text-box-third > p:nth-child(3) {
+    color: black;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    opacity: 0.2;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.text-box-third > p:nth-child(4) {
+    color: black;
+    border: 1px solid lightblue;
+    background-color: lime;
+    opacity: 0.2;
+    margin-top: 0;
+    font-size: 18px;
+}
+.text-box-third > button{
+    background-color: lightblue;
+    border-radius: 90px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 40px;
+}
+.text-box-third > button > a{
+    text-transform: uppercase;
+}
+
+.low{
+    height: 700px;
+
+}
+.contact > h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: -1100px;
+}
+.contact > div{
+    border: 1px solid lime;
+    background-color: lime;
+    height: 7px;
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 2px;
+}
+form > div{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+form > div > input{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+}
+form > div > textarea{
+    width: 400px;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+}
+.red-chair > img{
+    position: relative;
+    bottom: 280px;
+    left: 200px;
+}
+
+
 
