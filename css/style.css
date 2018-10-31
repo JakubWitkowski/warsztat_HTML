@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -15,25 +14,18 @@ body{
     margin-right: auto;
     width: 1056px;
 }
-
 header{
     background-color: black;
     display: flex;
     justify-content: space-between;
     height: 50px;
 }
-
-.left-nav{
-
-}
-
 .left-nav p{
     color: white;
     text-transform: uppercase;
     font-size: 20px;
     margin-left: 40px;
     margin-top: 15px;
-
 }
 span{
     color: lime;
@@ -89,75 +81,50 @@ ul > li:hover > .sub-nav > li{
 .first{
     display: flex;
     background: linear-gradient(to bottom, white, lightgrey);
-    justify-content: space-between;
     height: 350px;
 }
-
-.text{
-    text-align: center;
-    width: 500px;
-    margin-top: 100px;
+.next{
+    position: relative;
+    left: 997px;
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
 }
-
-.text > h1{
+.prev{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 5px;
+}
+.slide{
+    position: relative;
+    left: 50px;
+}
+.slide-text{
+    position: relative;
+    bottom: 300px;
+    width: 300px;
+    left: 550px;
+}
+.slide-text > h1{
     text-transform: uppercase;
 }
-.text > p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-.text > button{
-    height: 50px;
+.slide-text > button{
     width: 200px;
-    border-radius: 90px;
-    color: white;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
     background-color: black;
-    border: 0;
-    font-size: 20px;
+    margin-top: 15px;
+}
+.slide-text > button > a{
     text-transform: uppercase;
 }
-.slider{
-    display: flex;
-    overflow: hidden;
+/*section*/
 
-}
-#r1 , #r2, #r3{
-    display: none;
-}
-.slider-one{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.slider-two{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.slider-third{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.slider-one > img{
+/*section second*/
 
-}
-.slider-two > img{
-
-}
-.slider-third > img{
-
-}
-
-
-
-
-.slider > .next, .prev{
-    /*background-color: transparent;*/
-    /*border: none;*/
-    justify-content: space-between;
-}
 .second{
     display: flex;
     margin-top: 30px;
@@ -204,9 +171,9 @@ ul > li:hover > .sub-nav > li{
     margin-bottom: 10px;
 }
 .second-text > div{
-    border: 1px solid lime;
+    border: 1px solid lavenderblush;
     height: 7px;
-    background-color: lime;
+    background-color: lavenderblush;
     margin-bottom: 10px;
     width: 60%;
 }
@@ -256,6 +223,10 @@ ul > li:hover > .sub-nav > li{
     z-index: 100;
 }
 
+/*section second*/
+
+/*price list*/
+
 .bg{
     border: 1px solid lightgrey;
     color: lightgrey;
@@ -279,8 +250,8 @@ ul > li:hover > .sub-nav > li{
     margin-bottom: 10px;
 }
 .price-list-top > div{
-    border: 1px solid lime;
-    background-color: lime;
+    border: 1px solid lavender;
+    background-color: lavender;
     height: 7px;
     width: 30%;
     margin-left: 0;
@@ -558,6 +529,10 @@ ul > li:hover > .sub-nav > li{
     text-transform: uppercase;
 }
 
+/*price list*/
+
+/*contact*/
+
 .low{
     height: 500px;
 
@@ -568,8 +543,8 @@ ul > li:hover > .sub-nav > li{
     margin-left: -800px;
 }
 .contact > div{
-    border: 1px solid lime;
-    background-color: lime;
+    border: 1px solid lavenderblush;
+    background-color: lavenderblush;
     height: 7px;
     width: 20%;
     margin-left: 50px;
@@ -628,6 +603,11 @@ form > div > textarea{
     text-transform: uppercase;
     font-size: 30px;
 }
+
+/*contact*/
+
+/*footer*/
+
 footer{
     height: 70px;
     background-color: white;
@@ -651,3 +631,4 @@ footer > p:nth-child(2){
     left: 300px;
 }
 
+/*footer*/
