@@ -11,6 +11,9 @@ body{
 /*header*/
 .container{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1056px;
 }
 
 header{
@@ -62,6 +65,8 @@ a:hover{
     background-color: black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 10000;
 }
 .sub-nav > li{
     text-transform: capitalize;
@@ -74,7 +79,6 @@ a:hover{
 /*rozwijane menu*/
 ul > li:hover > .sub-nav > li{
     display: block;
-    z-index: 1000;
 }
 /**/
 
@@ -86,6 +90,7 @@ ul > li:hover > .sub-nav > li{
     display: flex;
     background: linear-gradient(to bottom, white, lightgrey);
     justify-content: space-between;
+    height: 350px;
 }
 
 .text{
@@ -115,7 +120,39 @@ ul > li:hover > .sub-nav > li{
 .slider{
     display: flex;
     overflow: hidden;
+
 }
+#r1 , #r2, #r3{
+    display: none;
+}
+.slider-one{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slider-two{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slider-third{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slider-one > img{
+
+}
+.slider-two > img{
+
+}
+.slider-third > img{
+
+}
+
+
+
+
 .slider > .next, .prev{
     /*background-color: transparent;*/
     /*border: none;*/
@@ -124,6 +161,8 @@ ul > li:hover > .sub-nav > li{
 .second{
     display: flex;
     margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .second > .images{
     display: flex;
@@ -161,7 +200,7 @@ ul > li:hover > .sub-nav > li{
 }
 .second-text > h1{
     font-size: 25px;
-    margin-left: -480px;
+    margin-left: -120px;
     margin-bottom: 10px;
 }
 .second-text > div{
@@ -169,7 +208,7 @@ ul > li:hover > .sub-nav > li{
     height: 7px;
     background-color: lime;
     margin-bottom: 10px;
-    width: 30%;
+    width: 60%;
 }
 .border-first{
     border: 1px solid lime;
@@ -224,6 +263,8 @@ ul > li:hover > .sub-nav > li{
     background-color: lavenderblush;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: -40px;
+    margin-bottom: 40px;
 
 }
 .price-list-bottom{
@@ -234,7 +275,7 @@ ul > li:hover > .sub-nav > li{
 .price-list-top > h1{
     text-transform: uppercase;
     color: black;
-    margin-left: -1100px;
+    margin-left: -800px;
     margin-bottom: 10px;
 }
 .price-list-top > div{
@@ -518,13 +559,13 @@ ul > li:hover > .sub-nav > li{
 }
 
 .low{
-    height: 700px;
+    height: 500px;
 
 }
 .contact > h2{
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left: -1100px;
+    margin-left: -800px;
 }
 .contact > div{
     border: 1px solid lime;
@@ -547,15 +588,66 @@ form > div > input{
 }
 form > div > textarea{
     width: 400px;
-    height: 100px;
+    height: 200px;
     resize: none;
     padding: 10px;
 }
 .red-chair > img{
     position: relative;
-    bottom: 280px;
-    left: 200px;
+    bottom: 400px;
+    left: 300px;
 }
-
-
+.stick{
+    border: 1px solid lightblue;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 700px;
+    bottom: 380px;
+}
+.stick-text > p{
+    width: 250px;
+    height: 50px;
+    position: relative;
+    left: 750px;
+    bottom: 420px;
+    color: lightblue;
+}
+.send > button{
+    height: 80px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    background-color: lightblue;
+    position: relative;
+    bottom: 400px;
+    left: 300px;
+}
+.send > button > a{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+footer{
+    height: 70px;
+    background-color: white;
+}
+footer > p:nth-child(1){
+    position: relative;
+    right: 450px;
+    top: 40px;
+    color: lightblue;
+}
+footer > p:nth-child(2){
+    text-transform: uppercase;
+    position: relative;
+    left: 550px;
+    top: 23px;
+    color: lightblue;
+}
+.social-media{
+    position: relative;
+    bottom: 10px;
+    left: 300px;
+}
 
