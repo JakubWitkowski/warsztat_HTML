@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -117,6 +118,8 @@ ul > li:hover > .sub-nav > li{
     border: none;
     background-color: black;
     margin-top: 15px;
+    position: relative;
+    left: 10px;
 }
 .slide-text > button > a{
     text-transform: uppercase;
